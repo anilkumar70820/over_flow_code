@@ -1,0 +1,52 @@
+layout
+responsive 
+    sm >= 576px
+    md >= 768px
+    lg >= 992px
+    xl >= 1200px
+    2xl >= 1400px
+
+format 
+    row = col-12 = 100%
+    col-6= 50%
+
+    container
+        max-width:;
+        padding-left:12px;
+        padding-right:12px;
+        marign-left:auto;
+        marign-right:auto;
+
+    row
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        margin-left: -12px;
+        margin-right: -12px;
+
+    col- 
+        width: %;
+        padding-left:12px;
+        padding-right:12px;
+
+css
+    property:value;
+    inline
+    internal
+    external
+
+display:
+    flex
+        + (5)
+        flex-direction
+        flex-wrap
+        align-items
+        align-content
+        justify-content
+    inline
+    block
+    inline-block
+    none
+
+pseudo-classes
+pseudo-elements

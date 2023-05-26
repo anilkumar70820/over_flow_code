@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.relative {
+    position: relative;
+}
+
+.container {
+    max-width: 1140px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* nav-bar code */
+nav {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    font-size: 21px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.col-3 {
+    width: 25%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-12 {
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.border-normal {
+    border: 2px solid black;
+}
+
+.card {
+    overflow: hidden;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.iconBoxContainer {
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 200ms linear;
+}
+
+.iconBoxContainer {
+    position: absolute;
+    right: -42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.iconBoxContainer>a.iconBox {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconBoxContainer>a.iconBox:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.iconBoxContainer>a.iconBox:hover {
+    background-color: #FF5300;
+}
+
+.iconBoxContainer>a.iconBox:hover svg path {
+    fill: white;
+}
+
+.card:hover .iconBoxContainer {
+    right: 0;
+}
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+.vh-100 {
+    height: 100vh;
+}
+
+.min-vh-100 {
+    min-height: 100vh;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+@media (max-width:576px) {
+    label[for="menuIcon"] {
+        width: 35px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 3;
+        position: relative;
+    }
+
+    label[for="menuIcon"]>span {
+        width: 100%;
+        height: 4px;
+        background-color: orangered;
+    }
+
+    .sm-screen {
+        position: fixed;
+        z-index: 2;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: yellow;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    input[type="checkbox"]:checked~ul.sm-screen {
+        opacity: 1;
+        pointer-events: all;
+    }
+}
+
+
+@media (min-width:576px) {
+    .col-sm-6 {
+        width: 50%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media (min-width:768px) {
+    .col-md-4 {
+        width: 33.33%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media (min-width:992px) {
+    .col-lg-3 {
+        width: 25%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .mb-lg-0 {
+        margin-bottom: 0;
+    }
+}
